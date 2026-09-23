@@ -1,2 +1,7 @@
-# pw-vanessa044
-pertemuan 1-16 
+# (2611500044)-PWD-{TI1A}-25260
+Repository Latihan Pertemuan-1 sampai dengan Pertemuan-16<br>
+Matakuliah Pemograman Web Dasar<br>
+Kelompok {TI1A}<br>
+Tahun Ajaran 2025/2026
+Semester Gasal<br><br
+![Logo ISBAL](images.png)
