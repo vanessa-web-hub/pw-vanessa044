@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Babel | Wisata Bangka Belitung</title>
+
+<style>
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Arial', sans-serif;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    background: #ffffff;
+
+    color: #263238;
+
+}
+
+/* HEADER */
+
+header {
+
+    background: #174c45;
+
+    color: white;
+
+    padding: 20px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+}
+
+.logo {
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+.logo span {
+
+    color: #f5c76b;
+
+}
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 17px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+nav a:hover {
+
+    color: #f5c76b;
+
+}
+
+/* HOME */
+
+.home {
+
+    min-height: 520px;
+
+    background:
+
+    linear-gradient(rgba(10,40,35,.45),rgba(10,40,35,.55)),
+
+    url("https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1600");
+
+    background-position: center;
+
+    background-size: cover;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 8%;
+
+    color: white;
+
+}
+
+.home-content {
+
+    max-width: 650px;
+
+}
+
+.home h1 {
+
+    font-size: 48px;
+
+    margin-bottom: 20px;
+
+    line-height: 1.2;
+
+}
+
+.home p {
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+.btn {
+
+    display: inline-block;
+
+    background: #f5c76b;
+
+    color: #174c45;
+
+    padding: 14px 27px;
+
+    margin-top: 25px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+.btn:hover {
+
+    background: white;
+
+}
+
+/* UMUM */
+
+section {
+
+    padding: 70px 8%;
+
+}
+
+.heading {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+.heading h2 {
+
+    color: #174c45;
+
+    font-size: 32px;
+
+    margin-bottom: 12px;
+
+}
+
+.heading p {
+
+    color: #777;
+
+}
+
+/* ABOUT */
+
+.about {
+
+    display: flex;
+
+    gap: 40px;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+}
+
+.about img {
+
+    width: 45%;
+
+    min-width: 260px;
+
+    height: 320px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+}
+
+.about-content {
+
+    flex: 1;
+
+    min-width: 250px;
+
+    line-height: 1.9;
+
+}
+
+.about-content h3 {
+
+    color: #174c45;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+
+}
+
+/* LAYANAN */
+
+.services {
+
+    background: #edf6f3;
+
+}
+
+.service-list {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+
+    gap: 25px;
+
+}
+
+.service-card {
+
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.08);
+
+}
+
+.service-card img {
+
+    width: 100%;
+
+    height: 210px;
+
+    object-fit: cover;
+
+}
+
+.service-info {
+
+    padding: 22px;
+
+}
+
+.service-info h3 {
+
+    color: #174c45;
+
+    margin-bottom: 12px;
+
+}
+
+.service-info p {
+
+    color: #666;
+
+    line-height: 1.7;
+
+}
+
+/* GALERI */
+
+.gallery-list {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+
+    gap: 18px;
+
+}
+
+.gallery-list img {
+
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    transition: .3s;
+
+}
+
+.gallery-list img:hover {
+
+    transform: scale(1.03);
+
+}
+
+/* KONTAK */
+
+.contact {
+
+    background: #edf6f3;
+
+}
+
+.contact-info {
+
+    text-align: center;
+
+    line-height: 2.2;
+
+    margin-bottom: 35px;
+
+}
+
+.contact-info strong {
+
+    color: #174c45;
+
+}
+
+/* FORM KONTAK */
+
+.form-box {
+
+    background: white;
+
+    max-width: 600px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.08);
+
+}
+
+.form-box h3 {
+
+    color: #174c45;
+
+    margin-bottom: 20px;
+
+}
+
+input, textarea {
+
+    display: block;
+
+    width: 100%;
+
+    padding: 13px;
+
+    margin: 10px 0 17px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+
+}
+
+textarea {
+
+    height: 120px;
+
+}
+
+button {
+
+    background: #174c45;
+
+    color: white;
+
+    padding: 13px 25px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+button:hover {
+
+    background: #287568;
+
+}
+
+/* BUKU TAMU */
+
+#bukutamu {
+
+    display: none;
+
+    background: white;
+
+}
+
+#bukutamu:target {
+
+    display: block;
+
+}
+
+.guest-box {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    background: #edf6f3;
+
+    border-radius: 10px;
+
+}
+
+.guest-box label {
+
+    font-weight: bold;
+
+    color: #174c45;
+
+}
+
+.guest-box input,
+
+.guest-box textarea {
+
+    background: white;
+
+}
+
+.guest-box p {
+
+    margin-top: 15px;
+
+    color: #777;
+
+    font-size: 13px;
+
+}
+
+/* FOOTER */
+
+footer {
+
+    background: #123a35;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 15px;
+
+    line-height: 2;
+
+}
+
+footer h3 {
+
+    color: #f5c76b;
+
+    font-size: 24px;
+
+}
+
+footer a {
+
+    color: white;
+
+    text-decoration: none;
+
+    margin: 8px;
+
+}
+
+footer a:hover {
+
+    color: #f5c76b;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:700px) {
+
+    header {
+
+        justify-content: center;
+
+        gap: 15px;
+
+    }
+
+    nav {
+
+        text-align: center;
+
+        line-height: 2.5;
+
+    }
+
+    nav a {
+
+        margin: 5px;
+
+        font-size: 12px;
+
+    }
+
+    .home h1 {
+
+        font-size: 34px;
+
+    }
+
+    .about img {
+
+        width: 100%;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo">EXPLORE <span>BABEL.</span></div>
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="#services">Layanan</a>
+
+        <a href="#gallery">Galeri</a>
+
+        <a href="#contact">Kontak</a>
+
+        <a href="#bukutamu">Buku Tamu</a>
+
+    </nav>
+
+</header>
+
+<!-- HOME -->
+
+<div class="home" id="home">
+
+    <div class="home-content">
+
+        <h1>Discover The Beauty Of Bangka Belitung</h1>
+
+        <p>
+
+            Temukan surga tersembunyi Indonesia melalui
+
+            keindahan pantai, pulau eksotis, dan kekayaan
+
+            alam Bangka Belitung.
+
+        </p>
+
+        <a href="#services" class="btn">
+
+            Mulai Menjelajah
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <div class="heading">
+
+        <h2>Tentang Kami</h2>
+
+        <p>Mengenal lebih dekat Explore Babel</p>
+
+    </div>
+
+    <div class="about">
+
+        <img
+
+        src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=900"
+
+        alt="Pemandangan alam">
+
+        <div class="about-content">
+
+            <h3>Pesona Alam Negeri Laskar Pelangi</h3>
+
+            <p>
+
+                Explore Babel adalah website yang menyediakan
+
+                informasi mengenai destinasi wisata di Provinsi
+
+                Kepulauan Bangka Belitung.
+
+            </p>
+
+            <p>
+
+                Bangka Belitung memiliki berbagai keindahan
+
+                alam, mulai dari pantai berpasir putih,
+
+                bebatuan granit yang khas, hingga pulau-pulau
+
+                yang memiliki pemandangan menakjubkan.
+
+            </p>
+
+            <p>
+
+                Kami hadir untuk memperkenalkan keindahan
+
+                wisata daerah kepada masyarakat luas.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- LAYANAN -->
+
+<section class="services" id="services">
+
+    <div class="heading">
+
+        <h2>Layanan Wisata</h2>
+
+        <p>Pilihan pengalaman wisata terbaik</p>
+
+    </div>
+
+    <div class="service-list">
+
+        <div class="service-card">
+
+            <img
+
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700"
+
+            alt="Wisata pantai">
+
+            <div class="service-info">
+
+                <h3>Eksplorasi Pantai</h3>
+
+                <p>
+
+                    Menikmati keindahan pantai dengan pasir
+
+                    putih dan air laut yang jernih.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="service-card">
+
+            <img
+
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=700"
+
+            alt="Wisata alam">
+
+            <div class="service-info">
+
+                <h3>Petualangan Alam</h3>
+
+                <p>
+
+                    Menjelajahi berbagai tempat wisata alam
+
+                    dan menikmati pemandangan yang indah.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="service-card">
+
+            <img
+
+            src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?w=700"
+
+            alt="Wisata bahari">
+
+            <div class="service-info">
+
+                <h3>Wisata Bahari</h3>
+
+                <p>
+
+                    Menikmati aktivitas wisata laut dan
+
+                    mengenal keindahan bawah laut.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- GALERI -->
+
+<section id="gallery">
+
+    <div class="heading">
+
+        <h2>Galeri Wisata</h2>
+
+        <p>Kumpulan keindahan alam dan destinasi wisata</p>
+
+    </div>
+
+    <div class="gallery-list">
+
+        <img
+
+        src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=700"
+
+        alt="Pantai indah">
+
+        <img
+
+        src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=700"
+
+        alt="Pemandangan laut">
+
+        <img
+
+        src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=700"
+
+        alt="Pemandangan alam">
+
+        <img
+
+        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700"
+
+        alt="Pantai tropis">
+
+    </div>
+
+</section>
+
+<!-- KONTAK -->
+
+<section class="contact" id="contact">
+
+    <div class="heading">
+
+        <h2>Hubungi Kami</h2>
+
+        <p>Kami siap menerima pertanyaan dan saran Anda</p>
+
+    </div>
+
+    <div class="contact-info">
+
+        <p><strong>Alamat:</strong>
+
+        Pangkal Pinang, Bangka Belitung</p>
+
+        <p><strong>Email:</strong>
+
+        vanessa.asoka@gmail.com</p>
+
+        <p><strong>Telepon:</strong>
+
+        082269035291</p>
+
+    </div>
+
+    <div class="form-box">
+
+        <h3>Kirim Pesan</h3>
+
+        <form action="#" method="GET">
+
+            <input
+
+            type="text"
+
+            name="nama123"
+
+            placeholder="Nama Lengkap"
+
+            maxlength="50"
+
+            required>
+
+            <input
+
+            type="email"
+
+            name="email123"
+
+            placeholder="Email"
+
+            maxlength="100"
+
+            required>
+
+            <textarea
+
+            name="pesan123"
+
+            placeholder="Tulis pesan Anda..."
+
+            maxlength="500"
+
+            required></textarea>
+
+            <button type="submit">Kirim Pesan</button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- BUKU TAMU -->
+
+<section id="bukutamu">
+
+    <div class="heading">
+
+        <h2>Buku Tamu</h2>
+
+        <p>Silakan isi formulir kunjungan Anda</p>
+
+    </div>
+
+    <div class="guest-box">
+
+        <form action="#" method="GET"
+
+        onsubmit="return validasi()">
+
+            <label>Nama Lengkap *</label>
+
+            <input
+
+            type="text"
+
+            name="nm_lengkap123"
+
+            placeholder="Nama lengkap"
+
+            maxlength="50"
+
+            required>
+
+            <label>Email *</label>
+
+            <input
+
+            type="email"
+
+            name="email123"
+
+            placeholder="Alamat email"
+
+            maxlength="100"
+
+            required>
+
+            <label>Asal / Instansi</label>
+
+            <input
+
+            type="text"
+
+            name="asal_instansi123"
+
+            placeholder="Asal atau instansi"
+
+            maxlength="100">
+
+            <label>Subjek</label>
+
+            <input
+
+            type="text"
+
+            name="subjek123"
+
+            placeholder="Subjek pesan"
+
+            maxlength="100">
+
+            <label>Pesan / Komentar *</label>
+
+            <textarea
+
+            name="pesan_komentar123"
+
+            placeholder="Tulis pesan atau komentar"
+
+            maxlength="500"
+
+            required></textarea>
+
+            <label>Tanggal Kunjungan</label>
+
+            <input
+
+            type="date"
+
+            name="tanggal_kunjungan123"
+
+            id="tanggal"
+
+            >
+
+            <button type="submit">Kirim Buku Tamu</button>
+
+            <p>* Kolom wajib diisi.</p>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h3>EXPLORE BABEL.</h3>
+
+    <p>Explore More, Discover Beauty.</p>
+
+    <p>
+
+        <a href="#home">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="#services">Layanan</a>
+
+        <a href="#gallery">Galeri</a>
+
+        <a href="#contact">Kontak</a>
+
+    </p>
+
+    <p>Instagram: @explorebabel</p>
+
+    <p>Email: vanessa.asoka@gmail.com</p>
+
+    <p>
+
+        &copy; 2026 Explore Babel.
+
+        All Rights Reserved.
+
+    </p>
+
+</footer>
+
+<script>
+
+// Mengisi tanggal kunjungan otomatis
+
+document.getElementById("tanggal").value =
+
+new Date().toISOString().split("T")[0];
+
+// Validasi formulir buku tamu
+
+function validasi() {
+
+    let form = document.querySelector(".guest-box form");
+
+    let nama = form.elements["nm_lengkap123"].value.trim();
+
+    let email = form.elements["email123"].value.trim();
+
+    let pesan = form.elements["pesan_komentar123"].value.trim();
+
+    if (nama === "" || email === "" || pesan === "") {
+
+        alert("Nama, email, dan pesan wajib diisi!");
+
+        return false;
+
+    }
+
+    if (nama.length > 50 || email.length > 100 ||
+
+        pesan.length > 500) {
+
+        alert("Jumlah karakter melebihi batas!");
+
+        return false;
+
+    }
+
+    return true;
+
+}
+
+</script>
+
+</body>
+
+</html>
